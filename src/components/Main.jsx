@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "../App.css";
@@ -11,9 +10,11 @@ function Main() {
 
   const fetchTestimonials = async () => {
     try {
-      const response = await axios(`https://dummyjson.com/c/a5f5-4102-4d26-8ec8`);
+      const response = await axios(
+        `https://dummyjson.com/c/a5f5-4102-4d26-8ec8`
+      );
       setTestimonials(response.data);
-      console.log('data', response.data);
+      console.log("data", response.data);
     } catch (error) {
       console.log("error", error);
     }
@@ -23,31 +24,25 @@ function Main() {
     fetchTestimonials();
   }, []);
 
-  
-
-  useEffect(()=>{
-
-    const interval =setInterval(() => {
-       
-        setProgress((prevProgress)=>{
-if(prevProgress >=100){
-    setCurrentIndex((prev)=> prev === testimonials.length-1 ?0 : prev+1)
-    return prevProgress=0;
-}
-    return prevProgress+1
-     })
-
-
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setProgress((prevProgress) => {
+        if (prevProgress >= 100) {
+          setCurrentIndex((prev) =>
+            prev === testimonials.length - 1 ? 0 : prev + 1
+          );
+          return 0;
+        }
+        return prevProgress + 1;
+      });
     }, 40);
-    return()=>clearInterval(interval)
-
-  },[testimonials.length ,currentIndex])
-
+    return () => clearInterval(interval);
+  }, [testimonials.length, currentIndex]);
 
   return (
     <div className="app">
       {testimonials.length > 0 && (
-        <Cardblock data={testimonials[currentIndex]} progress={progress}/>
+        <Cardblock data={testimonials[currentIndex]} progress={progress} />
       )}
     </div>
   );

@@ -1,15 +1,13 @@
-
-
-.container{
+.container {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   position: relative;
 
-  height: 80vh; 
+  height: 80vh;
   /* background-color: aquamarine; */
 }
- /* .card{
+/* .card{
   background-color:whitesmoke;
   width: 750px;
 height:300px;
@@ -31,19 +29,19 @@ padding: 10px 20px 0px 20px;
   margin-left: -700px;
   text-align: left;
  } */
- .card {
+.card {
   background-color: whitesmoke;
   width: 750px;
   height: 300px;
   border-radius: 20px;
-  box-shadow: 0px 0px 40px 1px #35074B40;
+  box-shadow: 0px 0px 40px 1px #35074b40;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px 20px 0px 20px;
   text-align: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .info {
@@ -54,53 +52,45 @@ padding: 10px 20px 0px 20px;
   display: flex;
   justify-content: center;
   align-items: end;
-  
 }
 .circle {
   /* width: 20px;
   height: 20px; 
   border-radius: 50%; */
-  background-color: silver; 
+  background-color: silver;
   /* margin-left: 10px;   */
   width: 45px;
-height: 45px;
-gap: 0px;
-border-radius:50%;
-opacity: 0px;
-margin-left: 12px;
-
+  height: 45px;
+  gap: 0px;
+  border-radius: 50%;
+  opacity: 0px;
+  margin-left: 12px;
 }
 
-nav{
-  font-family:unset;
-font-size: 32px;
-font-weight: 600;
-line-height: 28px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+nav {
+  font-family: unset;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #520FB7;
-  width: Fixed (1,440px)px;
-height: Fixed (112px)px;
-padding: 29px 32px 29px 32px;
-gap: 778px;
-opacity: 0px;
-color: white;
-
+  background: #520fb7;
+  width: Fixed (1, 440px) px;
+  height: Fixed (112px) px;
+  padding: 29px 32px 29px 32px;
+  gap: 778px;
+  opacity: 0px;
+  color: white;
 }
-
 
 .progress-bar {
   border-radius: 10px;
-  width: 100%;
   height: 5px;
-  background-color: #520fb7; 
-  position: absolute; 
-  top: 10%;
-  left: 10%;
-  transition: width 0.4s ease-in-out; /* Smooth transition of the width */
+  background-color: #520fb7;
+  transition: width 0.04s ease-in-out;
 }
