@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  position: relative;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 80vh; 
+  /* background-color: aquamarine; */
+}
+ /* .card{
+  background-color:whitesmoke;
+  width: 750px;
+height:300px;
+border-radius: 20px;
+
+box-shadow: 0px 0px 40px 1px #35074B40;
+
+display: flex;
+flex-direction: column;
+
+justify-content: center;
+align-items:flex-end;
+
+padding: 10px 20px 0px 20px;
+
+
+ }
+ .info{
+  margin-left: -700px;
+  text-align: left;
+ } */
+ .card {
+  background-color: whitesmoke;
+  width: 750px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 1px #35074B40;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 10px 20px 0px 20px;
+  text-align: center;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.info {
+  /* Adjust position to move the text a little to the left */
+  margin-left: 70%; /* Adjust this value to move it more or less */
+  text-align: left; /* Ensure text is aligned to the left */
+  line-height: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  
+}
+.circle {
+  /* width: 20px;
+  height: 20px; 
+  border-radius: 50%; */
+  background-color: silver; 
+  /* margin-left: 10px;   */
+  width: 45px;
+height: 45px;
+gap: 0px;
+border-radius:50%;
+opacity: 0px;
+margin-left: 12px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav{
+  font-family:unset;
+font-size: 32px;
+font-weight: 600;
+line-height: 28px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #520FB7;
+  width: Fixed (1,440px)px;
+height: Fixed (112px)px;
+padding: 29px 32px 29px 32px;
+gap: 778px;
+opacity: 0px;
+color: white;
+
+}
+
+
+.progress-bar {
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: #520fb7; 
+  position: absolute; 
+  top: 10%;
+  left: 10%;
+  transition: width 0.4s ease-in-out; /* Smooth transition of the width */
 }
